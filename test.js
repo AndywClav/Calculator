@@ -1,7 +1,7 @@
 //const numeros = ['2', '+', '5'];
 //Hasta no encontrar un operador concatenaremos los valores numericos hasta llegar al operador
 
-let numeros = ['1','2','2','3','+','3','3', '+', '2', '3', '4'].join('').split('+');
+//let numeros = ['1','2','2','3','+','3','3', '+', '2', '3', '4'].join('').split('+');
 
 const sumados = numeros.reduce((a, b) => Number(a) + Number(b));
 console.log(sumados,' sumados')
