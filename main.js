@@ -57,7 +57,6 @@ let value;
 let store = 0;
 let result = 0
 let keyCode = [48, 49, 50, 51, 52, 53, 54, 55, 56, 57];
-let keyboard = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, '+', '='];;
 
 function eventKeyboard(btn) {
     window.addEventListener('keyup', (e) => {
@@ -91,3 +90,22 @@ buttons.forEach(button => {
     eventClick(button);
     eventKeyboard(button);
 });
+
+// Modulo de localStorages 
+// ACA HACEMOS LA LOGICA PARA QUE EL DATO QUEDE GUARDADO EN EL LocalStorage
+
+const dataStore = [];
+
+console.log(dataStore);
+function addLocalStore(value) {
+    if (!value == "") {
+        dataStore.push(value)
+        localStorage.setItem("Result", JSON.stringify(dataStore)); 
+    }
+}
+
+function removeLocalStore() {
+    localStorage.clear();
+    dataStore.length = 0;
+}
+// anotaciones colocar una variable de operadores aripmetic
