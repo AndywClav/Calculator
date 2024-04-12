@@ -72,22 +72,22 @@ function eventKeyboard(btn) {
     })
 }
 
-function eventClick(btn, events) {
-    window.addEventListener('click', (e) => {
-        buttonValue = btn.textContent;
-        value = parseInt(buttonValue);
+// function eventClick(btn, events) {
+//     window.addEventListener('click', (e) => {
+//         buttonValue = btn.textContent;
+//         value = parseInt(buttonValue);
 
-        for (let i = 0; i < keyboard.length; i++) {
-            if (e.onClick === keyboard[value]) {
-                console.log('click');
-                console.log(value, btn, events);
-            }
-        }
-    });
-}
+//         for (let i = 0; i < keyboard.length; i++) {
+//             if (e.onClick === keyboard[value]) {
+//                 console.log('click');
+//                 console.log(value, btn, events);
+//             }
+//         }
+//     });
+// }
 
 buttons.forEach(button => {
-    eventClick(button);
+    //eventClick(button);
     eventKeyboard(button);
 });
 
@@ -96,7 +96,6 @@ buttons.forEach(button => {
 
 const dataStore = [];
 
-console.log(dataStore);
 function addLocalStore(value) {
     if (!value == "") {
         dataStore.push(value)
@@ -107,5 +106,31 @@ function addLocalStore(value) {
 function removeLocalStore() {
     localStorage.clear();
     dataStore.length = 0;
+    console.log("delete ;)");
 }
+
+// Logica del menu
+
+const menu = document.querySelector('#menu');
+
+menu.addEventListener('click', () => {
+    const history = document.querySelector('.caculator-nav-div');
+
+    if (history.style.display == 'flex') {
+        history.style.display = 'none';
+    } else {
+        history.style.display = 'flex';
+        history.style.flexDirection = 'column';
+        history.style.alignItems = 'center';
+        history.style.position = 'absolute';
+    }
+})
+
+// Logica de la basura del historia
+
+const trash = document.querySelector('#trash');
+
+trash.addEventListener('click', () => {
+    removeLocalStore();
+})
 // anotaciones colocar una variable de operadores aripmetic
