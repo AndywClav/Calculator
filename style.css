@@ -76,11 +76,11 @@ nav {
     background-color: rgb(193, 219, 236);
     padding: 0 1.5rem;
     border-radius: 10px;
-    box-shadow: 10px 10px black;
+    box-shadow: 7px 7px black;
     transition: box-shadow .3s ease-in-out;
 }
 
-.container-calculator:hover, .caculator-nav-div:hover {
+.container-calculator:hover, .caculator-nav-div:hover, .container-buttons > button:hover  {
     box-shadow: none;
 }
 
@@ -88,7 +88,7 @@ nav {
 
 .container-result {
     background-color: #ffffff;
-    border: 1px solid black;
+    border-radius: 3px;
     margin: .8rem 0;
     padding: 2rem 0 1rem;
     text-align: right;
@@ -114,4 +114,6 @@ button {
     padding: .1rem;
     font-size: 2rem;
     color: #454545;
+    box-shadow: 2px 1px #454545;
+    transition: box-shadow .3s ease-in-out;
 }

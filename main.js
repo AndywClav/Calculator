@@ -58,6 +58,8 @@ let store = 0;
 let result = 0
 let keyCode = [48, 49, 50, 51, 52, 53, 54, 55, 56, 57];
 
+//LOGICA PARA REGISTRAR LOS EVENTOS DEL TECLADO
+
 function eventKeyboard(btn) {
     window.addEventListener('keyup', (e) => {
         buttonValue = btn.textContent;

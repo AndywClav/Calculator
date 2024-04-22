@@ -9,7 +9,8 @@
     <link rel="shortcut icon"
         href="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.istockphoto.com%2Fid%2F172759822%2Fphoto%2Fbig-and-small.jpg%3Fb%3D1%26s%3D170667a%26w%3D0%26k%3D20%26c%3DzPC7pfOH1OElXt31DTrXRUB8-hvgI28ng1Yv8t9OY3I%3D&f=1&nofb=1&ipt=5622dde1e1aec563425d32e6c33d200c97bd399a93fb264018e4a3c830448bdf&ipo=images"
         type="image/x-icon">
-    <script defer src="./main.js"></script>
+    <!-- <script defer src="./main.js"></script> -->
+    <script defer src="./test.js"></script>
     <script defer src="https://code.iconify.design/iconify-icon/2.0.0/iconify-icon.min.js"></script>
 </head>
 
@@ -29,29 +30,29 @@
         <div class="container-calculator">
             <div class="container-result">
                 <div class="result-container">
-                    <span>OPERATION</span> <br>
-                    <span>RESULT</span>
+                    <span id="operation">OPERATION</span> <br>
+                    <span id="result">RESULT</span>
                 </div>
             </div>
             <div class="container-buttons">
-                <button type="button">.</button>
-                <button type="button">0</button>
-                <button type="button">1</button>
-                <button type="button">2</button>
-                <button type="button">3</button>
-                <button type="button">4</button>
-                <button type="button">5</button>
-                <button type="button">6</button>
-                <button type="button">7</button>
-                <button type="button">8</button>
-                <button type="button">9</button>
-                <button type="button">AC</button>
-                <button type="button">DEL</button>
-                <button type="button">*</button>
-                <button type="button">/</button>
-                <button type="button">-</button>
-                <button type="button">+</button>
-                <button type="button">=</button>
+                <button type="button" data-value="dot" >.</button>
+                <button type="button" data-value="0" >0</button>
+                <button type="button" data-value="1" >1</button>
+                <button type="button" data-value="2" >2</button>
+                <button type="button" data-value="3" >3</button>
+                <button type="button" data-value="4" >4</button>
+                <button type="button" data-value="5" >5</button>
+                <button type="button" data-value="6" >6</button>
+                <button type="button" data-value="7" >7</button>
+                <button type="button" data-value="8" >8</button>
+                <button type="button" data-value="9" >9</button>
+                <button type="button" data-value="reset" >AC</button>
+                <button type="button" data-value="delete" >DEL</button>
+                <button type="button" data-value="multiply" >*</button>
+                <button type="button" data-value="division" >/</button>
+                <button type="button" data-value="substraction" >-</button>
+                <button type="button" data-value="addition" >+</button>
+                <button type="button" data-value="equality" >=</button>
             </div>
         </div>
     </main>
