@@ -1,0 +1,13 @@
+/* Contenedor principal */
+
+.container-calculator {
+    background-color: rgb(193, 219, 236);
+    padding: 0 1.5rem;
+    border-radius: 10px;
+    box-shadow: 7px 7px black;
+    transition: box-shadow .3s ease-in-out;
+}
+
+.container-calculator:hover, .caculator-nav-div:hover, .container-buttons > button:hover  {
+    box-shadow: none;
+}

@@ -1,0 +1,17 @@
+.container-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-bottom: 2rem ;
+}
+
+button {
+    background-color: rgb(231, 252, 255, 0.5);
+    border: .5px solid black;
+    border-radius: 7px;
+    padding: .1rem;
+    font-size: 2rem;
+    color: #454545;
+    box-shadow: 2px 1px #454545;
+    transition: box-shadow .3s ease-in-out;
+}
