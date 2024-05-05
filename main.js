@@ -49,30 +49,30 @@
 //     })
 // })
 
-const buttons = document.querySelectorAll('button'); // Llamamos a todos los botones en forma de array.
-const spanJS = document.querySelectorAll('span');
+// const buttons = document.querySelectorAll('button'); // Llamamos a todos los botones en forma de array.
+// const spanJS = document.querySelectorAll('span');
 
-let buttonValue;
-let value;
-let store = 0;
-let result = 0
-let keyCode = [48, 49, 50, 51, 52, 53, 54, 55, 56, 57];
+// let buttonValue;
+// let value;
+// let store = 0;
+// let result = 0
+// let keyCode = [48, 49, 50, 51, 52, 53, 54, 55, 56, 57];
 
-//LOGICA PARA REGISTRAR LOS EVENTOS DEL TECLADO
+// //LOGICA PARA REGISTRAR LOS EVENTOS DEL TECLADO
 
-function eventKeyboard(btn) {
-    window.addEventListener('keyup', (e) => {
-        buttonValue = btn.textContent;
-        value = parseInt(buttonValue);
+// function eventKeyboard(btn) {
+//     window.addEventListener('keyup', (e) => {
+//         buttonValue = btn.textContent;
+//         value = parseInt(buttonValue);
 
-        for (let i = 0; i < keyCode.length; i++) {
-            if (e.keyCode === keyCode[value]) {
-                console.log('teclado');
-                console.log(value, btn);
-            }
-        }
-    })
-}
+//         for (let i = 0; i < keyCode.length; i++) {
+//             if (e.keyCode === keyCode[value]) {
+//                 console.log('teclado');
+//                 console.log(value, btn);
+//             }
+//         }
+//     })
+// }
 
 // function eventClick(btn, events) {
 //     window.addEventListener('click', (e) => {
@@ -88,10 +88,10 @@ function eventKeyboard(btn) {
 //     });
 // }
 
-buttons.forEach(button => {
-    //eventClick(button);
-    eventKeyboard(button);
-});
+// buttons.forEach(button => {
+//     //eventClick(button);
+//     eventKeyboard(button);
+// });
 
 // Modulo de localStorages 
 // ACA HACEMOS LA LOGICA PARA QUE EL DATO QUEDE GUARDADO EN EL LocalStorage
